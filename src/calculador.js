@@ -1,6 +1,6 @@
 import { useEffect, useState} from "react"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Table,Button } from 'reactstrap';
+import { Table} from 'reactstrap';
 
 //import { env } from 'process';
 const api = 'https://api.xor.cl/red/bus-stop'

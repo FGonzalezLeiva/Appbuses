@@ -1,8 +1,7 @@
 //import { useState } from "react";
 import { Container,Col } from "reactstrap"
-import {Micro} from "./Micro"
 import La from "./calculador"
-import {Formnuevatarea} from './formnuevatarea'
+//import {Formnuevatarea} from './formnuevatarea'
 
 export const Buscador = ()=>{
     const calcTime =(gmt,tipo,date)=>{
@@ -12,7 +11,7 @@ export const Buscador = ()=>{
         let nd = new Date(utc + (3600000*gmt));
         // console.log(nd.toLocaleString())
         // console.log(nd.toLocaleString().substring(11,19))
-        let inicia = 0;if(tipo==2){inicia = 11}
+        let inicia = 0;if(tipo===2){inicia = 11}
         return nd.toLocaleString().substring(inicia,19)
     }
     const hora = calcTime(-4,2,new Date())
