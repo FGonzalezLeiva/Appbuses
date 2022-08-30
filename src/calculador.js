@@ -4,6 +4,7 @@ import { Table} from 'reactstrap';
 
 //import { env } from 'process';
 const api = 'https://api.xor.cl/red/bus-stop'
+const mx10sec = 100
 //tareas
 
 const La = (props)=>{
@@ -19,7 +20,7 @@ const La = (props)=>{
             const llamarapi = async()=>{
                 try{
                 const data = await fetch(`${api}/${paradero}`)
-                console.log(data)
+                //console.log(data)
                 
                 if(data.ok){
                     const tareasApi = await data.json()
@@ -38,7 +39,7 @@ const La = (props)=>{
     },[Cargando])
 
     if(Cargando){
-        return <h1>Cargando...</h1>
+        return <h1>Cargando {bus}...</h1>
     }else if(falla){
         return <h1>{falla}</h1>
     }else{
@@ -55,7 +56,13 @@ const La = (props)=>{
             </thead>
             <tbody>
                 {buses.map((item,index)=>{
-                    return <tr> <td>{item.id}</td><td>{item.meters_distance}</td><td>{parseInt(item.meters_distance/5/60)}:{parseInt(item.meters_distance/5%60)<10?"0"+parseInt(item.meters_distance/5%60):parseInt(item.meters_distance/5%60)}</td></tr>
+                    const sec_paraquellegue = parseInt(item.meters_distance/5/mx10sec)
+                    const tiempo_para_llegar = `${sec_paraquellegue}:${sec_paraquellegue<10?"0"+sec_paraquellegue:sec_paraquellegue}`
+                    return <tr> 
+                                <td>{item.id}</td>
+                                <td>{item.meters_distance}</td>
+                                <td>{tiempo_para_llegar}</td>
+                            </tr>
                 })}
             </tbody>
         </Table>
