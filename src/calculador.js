@@ -59,7 +59,7 @@ const La = (props)=>{
                     return <tr> 
                                 <td>{item.id}</td>
                                 <td>{item.meters_distance}</td>
-                                <td>{parseInt(item.meters_distance/mtsxseg/60)}:{parseInt(item.meters_distance/5%60)<10?"0"+parseInt(item.meters_distance/mtsxseg%60):parseInt(item.meters_distance/mtsxseg%60)}</td></tr>
+                                <td>{parseInt(item.meters_distance/mtsxseg/60)}:{parseInt(item.meters_distance/mtsxseg%60)<10?"0"+parseInt(item.meters_distance/mtsxseg%60):parseInt(item.meters_distance/mtsxseg%60)}</td></tr>
                 })}
             </tbody>
         </Table>
