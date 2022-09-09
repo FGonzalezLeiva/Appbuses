@@ -28,6 +28,7 @@ export const Buscador = ()=>{
             <La bus='J18' paradero='PJ231' info='Desde depa'/>
             <La bus='J18' paradero='PJ618' info='Desde San Pablo'/>
             <La bus='418' paradero='PI759' info='Desde pajarito' />
+            <La bus='418' paradero='PJ201' info='Desde depa' />
         </Col>
     </Container>
     </>
