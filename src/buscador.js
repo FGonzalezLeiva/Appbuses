@@ -12,7 +12,7 @@ export const Buscador = ()=>{
         // console.log(nd.toLocaleString())
         // console.log(nd.toLocaleString().substring(11,19))
         let inicia = 0;if(tipo===2){inicia = 11}
-        return nd.toLocaleString().substring(inicia,19)
+        return nd.toISOString().replace('T',' ').substring(0,19)
     }
     const hora = calcTime(-4,2,new Date())
     const salida =  <>
