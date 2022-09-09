@@ -8,7 +8,7 @@ export const Buscador = ()=>{
         //console.log(typeof date,date)
         let d = date?new Date(date):new Date();
         let utc = d.getTime() + (d.getTimezoneOffset() * 60000);
-        let nd = new Date(utc + (3600000*gmt));
+        let nd = new Date(utc);
         // console.log(nd.toLocaleString())
         // console.log(nd.toLocaleString().substring(11,19))
         let inicia = 0;if(tipo===2){inicia = 11}
