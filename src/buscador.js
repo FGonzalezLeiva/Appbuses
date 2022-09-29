@@ -25,11 +25,15 @@ export const Buscador = ()=>{
         </Col>
         <Col>
             {/* <Micro/> */}
+            <h1> Desde el depa </h1>
+            <La bus='418' paradero='PJ201' info='Desde depa' />
             <La bus='J18' paradero='PJ231' info='Desde depa'/>
+            <La bus='J10' paradero='PJ1569' info='Desde depa' />
+                
+            <h1> Desde fuera </h1>    
             <La bus='J18' paradero='PJ618' info='Desde San Pablo'/>
             <La bus='418' paradero='PI759' info='Desde pajarito' />
-            <La bus='418' paradero='PJ201' info='Desde depa' />
-            <La bus='J10' paradero='PJ1569' info='Desde depa' />
+            <La bus='426' paradero='PJ153' info='Desde San Pablo' />
         </Col>
     </Container>
     </>
