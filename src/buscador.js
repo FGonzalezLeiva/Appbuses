@@ -33,7 +33,7 @@ export const Buscador = ()=>{
             <h1> Desde fuera </h1>    
             <La bus='J18' paradero='PJ618' info='Desde San Pablo'/>
             <La bus='418' paradero='PI759' info='Desde pajarito' />
-            <La bus='426' paradero='PJ153' info='Desde San Pablo' />
+            <La bus='422' paradero='PJ153' info='Desde San Pablo' />
         </Col>
     </Container>
     </>
