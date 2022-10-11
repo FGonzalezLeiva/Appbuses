@@ -14,7 +14,7 @@ export const Buscador = ()=>{
         let inicia = 0;if(tipo===2){inicia = 11}
         return nd.toISOString().replace('T',' ').substring(0,19)
     }
-    const hora = calcTime(-4,2,new Date())
+    const hora = calcTime(-3,2,new Date())
     const salida =  <>
     <Container >
         <Col>
